@@ -41,13 +41,13 @@ const NavBar: React.FC<NavBarProps> = ({}) => {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          {/* <NavigationMenuItem>
             <Link to="/analytics-dashboard">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Analytics Dashboard
               </NavigationMenuLink>
             </Link>
-          </NavigationMenuItem>
+          </NavigationMenuItem> */}
           <NavigationMenuItem>
             <Link to="/track-post">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>

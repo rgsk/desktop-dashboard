@@ -65,7 +65,7 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
               ]}
             />
           </div>
-          <div className="px-2">
+          {/* <div className="px-2">
             <p className="text-xl mb-4">Twitter Credentials</p>
             <GenericForm
               closeForm={() => {}}
@@ -109,7 +109,7 @@ const HomePage: React.FC<HomePageProps> = ({}) => {
                 },
               ]}
             />
-          </div>
+          </div> */}
         </div>
       )}
     </div>
