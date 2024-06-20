@@ -41,10 +41,6 @@ export const performLinkedinLogin = async (page: Page) => {
 
   // Simulate pressing the "Enter" key
   await page.keyboard.press('Enter');
-
-  await page.waitForSelector('.feed-identity-module__actor-meta', {
-    timeout: hoursToMilliseconds(1),
-  });
 };
 
 export const refechLinkedinFollowersData = async () => {
@@ -59,6 +55,8 @@ export const refechLinkedinFollowersData = async () => {
   await page.setViewport({ width: 1300, height: 768 });
 
   await performLinkedinLogin(page);
+
+  console.log('performLinkedinLogin complete');
 
   const getFollowersForProfile = async (profileUrl: string) => {
     await page.goto(profileUrl, {
