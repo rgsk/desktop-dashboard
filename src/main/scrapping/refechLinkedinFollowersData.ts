@@ -41,6 +41,10 @@ export const performLinkedinLogin = async (page: Page) => {
 
   // Simulate pressing the "Enter" key
   await page.keyboard.press('Enter');
+
+  await page.waitForSelector('div.share-box-feed-entry__closed-share-box', {
+    timeout: hoursToMilliseconds(1),
+  });
 };
 
 export const refechLinkedinFollowersData = async () => {
